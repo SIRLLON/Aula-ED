@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JS</title>
+</head>
+
+<body>
+    <script>
+        const idadeju = Number(37);
+        let nomeusu = prompt("Qual é o seu primeiro nome?");
+        let idadeusu = Number.parseInt(prompt("Qual é sua idade?"));
+        let generousu = prompt("Qual é o seu gênero? Para FEMININO,  digite 1. Para MASCULINO, digite 2. Para OUTROS, digite 3.");
+
+        if (idadeusu < 37) {
+            if (generousu == '1') {
+                document.write(`Olá, ${nomeusu} ! Seu gênero é feminino e em relação a mim, Juliana, você é ${idadeju - idadeusu} anos mais jovem.`);
+            } else if (generousu == "2") {
+                document.write(`Olá, ${nomeusu} ! Seu gênero é masculino e em relação a mim, Juliana, você é ${idadeju - idadeusu} anos mais jovem.`);
+            } else if (generousu == "3") {
+                document.write(`Olá, ${nomeusu} ! Seu gênero é outros  e em relação a mim, Juliana, você é ${(idadeju - idadeusu)} anos mais jovem.`);
+            }
+        } else if (idadeusu > 37) {
+            if (generousu == '1') {
+                document.write(`Olá, ${nomeusu} ! Seu gênero é feminino e em relação a mim, Juliana, você é ${idadeusu- idadeju} anos mais experiente.`);
+            } else if (generousu == "2") {
+                document.write(`Olá, ${nomeusu} ! Seu gênero é masculino e em relação a mim, Juliana, você é ${ idadeusu- idadeju} anos mais experiente.`);
+            } else if (generousu == "3") {
+                document.write(`Olá, ${nomeusu} ! Seu gênero é outros  e em relação a mim, Juliana, você é ${idadeusu - idadeju} anos mais experiente.`);
+            }
+
+        } else if (idadeusu == 28) {
+
+
+            if (generousu == '1') {
+                document.write(`Olá, ${nomeusu} ! Seu gênero é feminino e em relação a mim, Juliana, temos a mesma idade`);
+            } else if (generousu == "2") {
+                document.write(`Olá, ${nomeusu} ! Seu gênero é masculino e em relação a mim, Juliana, temos a mesma idade`);
+            } else if (generousu == "3") {
+                document.write(`Olá, ${nomeusu} ! Seu gênero é outros  e em relação a mim, Juliana, temos a mesma idade`);
+            } else {
+
+                document.write("Algum dado informado é inválido. Por favor, atualize e tente novamente.");
+            }
+
+
+
+        }
+    </script>
+</body>
+
+</html>
