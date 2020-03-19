@@ -11,27 +11,27 @@
     <script>
         const idadeju = Number(37);
         let nomeusu = prompt("Qual é o seu primeiro nome?");
-        let idadeusu = Number.parseInt(prompt("Qual é sua idade?"));
+        let nascusu = Number.parseInt(prompt("Qual é sua idade?"));
         let generousu = prompt("Qual é o seu gênero? Para FEMININO,  digite 1. Para MASCULINO, digite 2. Para OUTROS, digite 3.");
 
-        if (idadeusu < 37) {
+        if (nascusu < 37) {
             if (generousu == '1') {
-                document.write(`Olá, ${nomeusu} ! Seu gênero é feminino e em relação a mim, Juliana, você é ${idadeju - idadeusu} anos mais jovem.`);
+                document.write(`Olá, ${nomeusu} ! Seu gênero é feminino e em relação a mim, Juliana, você é ${idadeju - nascusu} anos mais jovem.`);
             } else if (generousu == "2") {
-                document.write(`Olá, ${nomeusu} ! Seu gênero é masculino e em relação a mim, Juliana, você é ${idadeju - idadeusu} anos mais jovem.`);
+                document.write(`Olá, ${nomeusu} ! Seu gênero é masculino e em relação a mim, Juliana, você é ${idadeju - nascusu} anos mais jovem.`);
             } else if (generousu == "3") {
-                document.write(`Olá, ${nomeusu} ! Seu gênero é outros  e em relação a mim, Juliana, você é ${(idadeju - idadeusu)} anos mais jovem.`);
+                document.write(`Olá, ${nomeusu} ! Seu gênero é outros  e em relação a mim, Juliana, você é ${(idadeju - nascusu)} anos mais jovem.`);
             }
-        } else if (idadeusu > 37) {
+        } else if (nascusu > 37) {
             if (generousu == '1') {
-                document.write(`Olá, ${nomeusu} ! Seu gênero é feminino e em relação a mim, Juliana, você é ${idadeusu- idadeju} anos mais experiente.`);
+                document.write(`Olá, ${nomeusu} ! Seu gênero é feminino e em relação a mim, Juliana, você é ${nascusu- idadeju} anos mais experiente.`);
             } else if (generousu == "2") {
-                document.write(`Olá, ${nomeusu} ! Seu gênero é masculino e em relação a mim, Juliana, você é ${ idadeusu- idadeju} anos mais experiente.`);
+                document.write(`Olá, ${nomeusu} ! Seu gênero é masculino e em relação a mim, Juliana, você é ${ nascusu- idadeju} anos mais experiente.`);
             } else if (generousu == "3") {
-                document.write(`Olá, ${nomeusu} ! Seu gênero é outros  e em relação a mim, Juliana, você é ${idadeusu - idadeju} anos mais experiente.`);
+                document.write(`Olá, ${nomeusu} ! Seu gênero é outros  e em relação a mim, Juliana, você é ${nascusu - idadeju} anos mais experiente.`);
             }
 
-        } else if (idadeusu == 28) {
+        } else if (nascusu == 28) {
 
 
             if (generousu == '1') {

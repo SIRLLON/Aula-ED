@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercícios JS</title>
+</head>
+
+<body>
+    <script>
+        var nome;
+        let num1, num2, num3;
+        //nome = window.prompt('Digite o nome do usuario:')
+        num1 = parseFloat(window.prompt('Digite o primeiro numero:'));
+        num2 = parseFloat(window.prompt('Digite o segundo numero:'));
+        num3 = parseFloat(window.prompt('Digite o terceiro numero:'));
+
+        /*let media = (num1 + num2 + num3) / 3;
+        document.write("<h2>" + nome + "</h2>" + " A média é " + media + " !!!");*/
+
+        //maior numero entre eles
+        if (num1 > num2) {
+            if (num1 > num3) {
+                document.write(`O maior número é o ${num1}`);
+            } else {
+                document.write(`O maior número é o ${num3}`);
+            }
+        } else if (num1 < num2) {
+            if (num2 > num3) {
+                document.write(`O maior número é o ${num2}`);
+            } else {
+                document.write(`O maior número é o ${num3}`);
+            }
+        } else if (num1 == num2) {
+            if (num1 > num3) {
+                document.write(`Os maiores números são o ${num1} e o ${num2}`);
+            } else {
+                document.write(`O maior número é o ${num3}`);
+            }
+        } else if (num1 == num3) {
+            if (num1 > num2) {
+                document.write(`Os maiores números são o ${num1} e o ${num3}`);
+            } else {
+                document.write(`O maior número é o ${num2}`);
+            }
+        } else if (num2 == num3) {
+            if (num1 < num2) {
+                document.write(`Os maiores números são o ${num2} e o ${num3}`);
+            } else {
+                document.write(`O maior número é o ${num1}`);
+            }
+        }
+    </script>
+</body>
+
+</html>
